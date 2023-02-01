@@ -6,3 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.68"
+clap = { version = "4.1.4", features = ["derive"] }
+console = "0.15.5"
+http-serde = "1.1.2"
+reqwest = { version = "0.11.14", default-features = false, features = ["rustls"] }
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.91"
+serde_yaml = "0.9.17"
+similar = { version = "2.2.1", features = ["inline", "bytes"] }
+tokio = { version = "1.25.0", features = ["full"] }
+url = { version = "2.3.1", features = ["serde"] }
